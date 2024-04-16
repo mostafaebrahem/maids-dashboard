@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div (click)="backHandle()" class="btn btn-warning w-auto px-5 py-2 my-4">
+  Back
+</div>
+<div class="container row">
+  <div class="left col-md-6">
+    <img class="w-100" [src]="singleItem.avatar" alt="" />
+  </div>
+  <div
+    class="right col-md-6 d-flex flex-column align-center justify-content-center"
+  >
+    <div class="header">
+      <h2>Name :</h2>
+      <hr />
+      <h2 class="my-3">
+        {{ singleItem.first_name }} {{ singleItem.last_name }}
+      </h2>
+      <h3>Email :</h3>
+      <hr />
+      <h3 class="my-3">{{ singleItem.email }}</h3>
+      <h2>Id :</h2>
+      <hr />
+      <h4>{{ singleItem.id }}</h4>
+    </div>
+  </div>
+</div>
